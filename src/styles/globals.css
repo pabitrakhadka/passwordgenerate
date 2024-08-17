@@ -2,28 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.container_password{
+  width: 100vh;
+  height: 100vh;
+  border: 1px solid black;
+  background-color: red;
+}
+ .show_strong_password{
+  padding: 0.5rem;
+  border-radius: 8rem;
+ 
+ }
+ .weak-bg {
+
+  border-radius: 8rem;
+  background-color: rgb(189, 59, 59);  
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.strong-bg {
+  border-radius: 8rem;
+  background-color: #428542;  
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.very-strong-bg {
+  border-radius: 8rem;
+  background-color: rgb(43, 181, 43);  
+}
+
+.very-weak-bg {
+  border-radius: 8rem;
+  background-color: rgb(204, 56, 56); 
+}
+ .padding{
+  padding: 1rem;
+ }
+.container h1{
+  font-size: 2.5rem;
+  font-family: "Poppins", system-ui;
+  font-weight: 900;
+  font-style: normal;
+}
+.inside_box_shadow{
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 @layer utilities {
